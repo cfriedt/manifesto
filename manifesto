@@ -218,7 +218,7 @@ class InterfaceDescriptor(Descriptor):
     def __str__(self):
         r = "[{}]\n".format(MnfsParser.INTERFACE_DESC)
         r += "vendor-string-id = {:#x}\n".format(self.vsid)
-        r += "vendor-product-id = {:#x}\n".format(self.psid)
+        r += "product-string-id = {:#x}\n".format(self.psid)
         return r
 
 class StringDescriptor(Descriptor):
